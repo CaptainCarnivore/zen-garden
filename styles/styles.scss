@@ -1,0 +1,4 @@
+@use 'atoms';  // assumes file is named _atoms.scss
+@use 'molecules' as mol;
+@use 'organisms' as o;
+@use 'variables' as *;
