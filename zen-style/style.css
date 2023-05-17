@@ -1,13 +1,12 @@
-h2,
-h3,
-h4 {
-  font-family: "arial narrow", Arial, Verdana, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Sue+Ellen+Francisco&display=swap");
+h2 {
+  font-family: "Sue Ellen Francisco", "arial narrow", Arial, Verdana, sans-serif;
   margin: 0;
 }
 
 h1 {
-  background: #ea2e49;
-  color: #fff;
+  background: #261010;
+  color: #74A84F;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
@@ -15,7 +14,7 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #3C312F;
   font-weight: 900; /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
@@ -39,7 +38,7 @@ h4 {
 }
 
 p {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Rajdhani", verdana, arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   padding: 0.5em 0;
@@ -48,41 +47,41 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #3C312F;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
 
 a:hover {
-  border-color: #ea2e49;
+  border-color: #261010;
 }
 
 [role=banner] > h1 {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #fff;
+  color: #DDDED8;
 }
 
 .summary {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #fff;
+  color: #3C312F;
   padding: 15% 0;
 }
 .summary p:last-child {
-  border-top: 1px solid #ea2e49;
+  border-top: 1px solid #261010;
   margin-top: 1em;
   padding-top: 1.5em;
 }
 .summary a {
-  color: #fff;
+  color: #3C312F;
 }
 
 .preamble {
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
+  background: rgba(38, 16, 16, 0.5);
+  color: #DDDED8;
   margin-left: -30%;
   padding: 5% 5% 5% 30%;
 }
@@ -96,15 +95,15 @@ a:hover {
 }
 
 html {
-  background-color: #daede2;
+  background-color: #261010;
   padding: 5%;
 }
 
 body {
-  font-family: verdana, arial, sans-serif;
+  font-family: "Rajdhani", verdana, arial, sans-serif;
   font-size: 85%;
-  color: #333;
-  background-color: #77c4d3;
+  color: #3C312F;
+  background-color: #EFEEED;
   margin: 0;
   padding: 1em;
 }

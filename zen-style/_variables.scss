@@ -1,9 +1,12 @@
-$fonts-headline: "arial narrow", Arial, Verdana, sans-serif;
-$fonts-body: verdana, arial, sans-serif;
-$background-color: #daede2;
-$primary: #77c4d3;
-$accent1: #ea2e49;
-$accent2: rgba(246, 247, 146, 0.9);
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Sue+Ellen+Francisco&display=swap');
+
+
+$fonts-headline: 'Sue Ellen Francisco', "arial narrow", Arial, Verdana, sans-serif;
+$fonts-body: 'Rajdhani', verdana, arial, sans-serif;
+$background-color: #261010;
+$primary: #EFEEED;
+$accent1: #261010;
+$accent2: #74A84F;
 $grey-sidebar: rgba(51, 55, 69, 0.9);
-$text-dark: #333;
-$text-light: #fff;
+$text-dark: #3C312F;
+$text-light: #DDDED8;
