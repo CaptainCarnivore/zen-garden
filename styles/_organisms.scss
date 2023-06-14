@@ -1,0 +1,12 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+

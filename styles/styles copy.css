@@ -1,0 +1,223 @@
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+}
+
+.intro {
+    margin-left: 10px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  text-overflow: hidden;
+  word-wrap:break-word;
+  place-content: center;
+  background-color: transparent;
+  grid-column: 1/2;
+  grid-row:1/2;
+}
+
+#zen-supporting {
+  margin-left: 10px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+text-overflow: hidden;
+word-wrap:break-word;
+place-content: center;
+background-color: transparent;
+grid-column: 2/3;
+grid-row:2/3;
+}
+
+#zen-supporting> *:hover {
+  z-index:2;
+  background:
+    linear-gradient(rgba(40, 180, 240, .3),rgba(40, 180, 240, .3)),
+    #fff;
+    border: 2px solid #0580d5;
+    border-radius: 5px;
+}
+
+#zen-supporting>* {
+
+  box-sizing: border-box;
+  transition: .3s;
+  text-align: center;
+  
+}
+
+
+#zen-supporting .explanation {
+  color: transparent;
+    overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(/images/stone-explanation.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+#zen-supporting .participation {
+  color: transparent;
+    overflow: hidden;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(/images/stone-participation.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+#zen-supporting .benefits {
+  color: transparent;
+    overflow: hidden;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(/images/stone-benefits.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+#zen-supporting .requirements {
+  color: transparent;
+    overflow: hidden;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(/images/stone-requirements.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+
+#zen-supporting .explanation:hover {
+  margin-right:-300px;
+  margin-bottom: -50px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+#zen-supporting .participation:hover {
+  margin-left:-300px;
+  margin-bottom: -100px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+#zen-supporting>*:hover a {
+  color: blue;
+}
+
+#zen-supporting .benefits:hover {
+  margin-right:-300px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+#zen-supporting .requirements:hover {
+  margin-left:-300px;
+  margin-top: -250px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+.intro>* {
+
+    box-sizing: border-box;
+    transition: .3s;
+    text-align: center;
+    
+}
+
+.intro> *:hover {
+    z-index:2;
+    background:
+      linear-gradient(rgba(40, 180, 240, .3),rgba(40, 180, 240, .3)),
+      #fff;
+      border: 2px solid #0580d5;
+      border-radius: 5px;
+}
+.intro header{
+    color: transparent;
+    overflow: hidden;
+    grid-column: 1/2;
+    background-image: url(/images/stone-header.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    
+}
+
+.intro .summary{
+    overflow: hidden;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url(/images/stone-summary.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    color: transparent;
+}
+
+#zen-supporting>* a{
+  color: transparent;
+}
+
+.intro .preamble{
+    overflow: hidden;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(/images/stone-preamble.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    color: transparent;
+}
+
+.intro .summary a{
+    color: transparent;
+}
+
+.intro header:hover {
+    margin-right:-350px;
+    text-justify: auto;
+    color: black;
+    background-image: none;
+  }
+
+  .intro .summary:hover {
+    margin-right:calc(-100%);
+    margin-left:calc(-115.75% - 5px);
+    text-align: center;
+    text-justify: auto;
+    color: black;
+    background-image: none;
+  }
+
+  .intro .summary:hover a{
+
+    color: black;
+
+  }
+
+  .intro .preamble:hover {
+    margin-left:-350px; 
+    margin-bottom:-200px;
+    text-justify: auto;
+    color: black;
+    background-image: none;
+  }

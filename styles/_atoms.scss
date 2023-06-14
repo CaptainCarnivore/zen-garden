@@ -1,0 +1,167 @@
+// intro
+
+.intro header{
+      color: transparent;
+      overflow: hidden;
+      grid-column: 1/2;
+      background-image: url(/images/stone-header.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+  }
+
+  .intro header:hover {
+    margin-right:-350px;
+    margin-bottom:-100px;
+    text-justify: auto;
+    color: black;
+    background-image: none;
+  }
+
+.intro .preamble{
+    overflow: hidden;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(/images/stone-preamble.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    color: transparent;
+}
+
+
+.intro .preamble:hover {
+    margin-left:-350px; 
+    margin-bottom:-275px;
+    text-justify: auto;
+    color: black;
+    background-image: none;
+  }
+  
+
+.intro .summary{
+     overflow: hidden;
+      grid-column: 2/3;
+      grid-row: 2/3;
+      background-image: url(/images/stone-summary.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+      color: transparent;
+}
+
+  .intro .summary a{
+    color: transparent;
+}
+
+
+  .intro .summary:hover {
+    margin-right:calc(-100%);
+    margin-left:calc(-115.75% - 5px);
+    text-align: center;
+    text-justify: auto;
+    color: black;
+    background-image: none;
+  }
+
+  .intro .summary:hover a{
+
+    color: black;
+
+  }
+
+// zen supporting
+
+
+#zen-supporting .explanation {
+    color: transparent;
+      overflow: hidden;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      background-image: url(/images/stone-explanation.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+
+  }
+  
+  #zen-supporting .participation {
+    color: transparent;
+      overflow: hidden;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      background-image: url(/images/stone-participation.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+  }
+  
+  #zen-supporting .benefits {
+    color: transparent;
+      overflow: hidden;
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background-image: url(/images/stone-benefits.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+  }
+  
+  #zen-supporting .requirements {
+    color: transparent;
+      overflow: hidden;
+      grid-column: 2/3;
+      grid-row: 2/3;
+      background-image: url(/images/stone-requirements.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+  }
+  
+  
+
+  #zen-supporting>* a{
+    color: transparent;
+  }
+  
+  #zen-supporting .explanation:hover {
+    margin-right:-300px;
+    margin-bottom: -200px;
+    text-justify: auto;
+    color: black;
+    background-image: none;
+    overflow: scroll;
+  }
+      
+#zen-supporting .participation:hover {
+  margin-left:-300px;
+  margin-bottom: -150px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+      
+#zen-supporting>*:hover a {
+  color: blue;
+}
+      
+#zen-supporting .benefits:hover {
+  margin-right:-300px;
+  margin-top: -50px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}  
+#zen-supporting .requirements:hover {
+  margin-left:-250px;
+  margin-top: -250px;
+  text-justify: auto;
+  overflow: scroll;
+  color: black;
+  background-image: none;
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}

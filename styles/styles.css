@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Sue+Ellen+Francisco&display=swap");
+.intro header {
+  color: transparent;
+  overflow: hidden;
+  grid-column: 1/2;
+  background-image: url(/images/stone-header.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.intro header:hover {
+  margin-right: -350px;
+  margin-bottom: -100px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+.intro .preamble {
+  overflow: hidden;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-image: url(/images/stone-preamble.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+}
+
+.intro .preamble:hover {
+  margin-left: -350px;
+  margin-bottom: -275px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+.intro .summary {
+  overflow: hidden;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url(/images/stone-summary.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+}
+
+.intro .summary a {
+  color: transparent;
+}
+
+.intro .summary:hover {
+  margin-right: -100%;
+  margin-left: calc(-115.75% - 5px);
+  text-align: center;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+.intro .summary:hover a {
+  color: black;
+}
+
+#zen-supporting .explanation {
+  color: transparent;
+  overflow: hidden;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-image: url(/images/stone-explanation.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#zen-supporting .participation {
+  color: transparent;
+  overflow: hidden;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url(/images/stone-participation.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#zen-supporting .benefits {
+  color: transparent;
+  overflow: hidden;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url(/images/stone-benefits.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#zen-supporting .requirements {
+  color: transparent;
+  overflow: hidden;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url(/images/stone-requirements.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#zen-supporting > * a {
+  color: transparent;
+}
+
+#zen-supporting .explanation:hover {
+  margin-right: -300px;
+  margin-bottom: -200px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+  overflow: scroll;
+}
+
+#zen-supporting .participation:hover {
+  margin-left: -300px;
+  margin-bottom: -150px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+#zen-supporting > *:hover a {
+  color: blue;
+}
+
+#zen-supporting .benefits:hover {
+  margin-right: -300px;
+  margin-top: -50px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+}
+
+#zen-supporting .requirements:hover {
+  margin-left: -250px;
+  margin-top: -250px;
+  text-justify: auto;
+  overflow: scroll;
+  color: black;
+  background-image: none;
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.intro {
+  margin-left: 10px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  text-overflow: hidden;
+  word-wrap: break-word;
+  place-content: center;
+  background-color: transparent;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.intro > * {
+  box-sizing: border-box;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.intro > *:hover {
+  z-index: 2;
+  background: linear-gradient(rgba(40, 180, 240, 0.3), rgba(40, 180, 240, 0.3)), #fff;
+  border: 2px solid #0580d5;
+  border-radius: 5px;
+}
+
+#zen-supporting {
+  margin-left: 10px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  text-overflow: hidden;
+  word-wrap: break-word;
+  place-content: center;
+  background-color: transparent;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#zen-supporting > *:hover {
+  z-index: 2;
+  background: linear-gradient(rgba(40, 180, 240, 0.3), rgba(40, 180, 240, 0.3)), #fff;
+  border: 2px solid #0580d5;
+  border-radius: 5px;
+}
+
+#zen-supporting > * {
+  box-sizing: border-box;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body {
+  font-family: "Rajdhani", verdana, arial, sans-serif;
+  font-size: 120%;
+  color: #3C312F;
+  background-color: #EFEEED;
+  margin: 0;
+  padding: 1em;
+}
+
+h1 {
+  font-family: "Sue Ellen Francisco", "arial narrow", Arial, Verdana, sans-serif;
+  font-size: 200%;
+}
+
+h3 {
+  font-family: "Sue Ellen Francisco", "arial narrow", Arial, Verdana, sans-serif;
+  font-size: 165%;
+}
+
+/*# sourceMappingURL=styles.css.map */
