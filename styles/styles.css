@@ -219,11 +219,6 @@ p {
   grid-template-rows: 1fr 1fr;
 }
 
-p {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 body {
   font-family: "Rajdhani", verdana, arial, sans-serif;
   font-size: 120%;
