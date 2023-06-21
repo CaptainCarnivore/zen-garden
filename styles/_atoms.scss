@@ -130,7 +130,8 @@
     text-justify: auto;
     color: black;
     background-image: none;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
       
 #zen-supporting .participation:hover {
@@ -156,7 +157,8 @@
   margin-left:-250px;
   margin-top: -250px;
   text-justify: auto;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   color: black;
   background-image: none;
 }

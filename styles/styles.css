@@ -118,7 +118,8 @@
   text-justify: auto;
   color: black;
   background-image: none;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #zen-supporting .participation:hover {
@@ -145,7 +146,8 @@
   margin-left: -250px;
   margin-top: -250px;
   text-justify: auto;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   color: black;
   background-image: none;
 }
@@ -181,7 +183,7 @@ p {
   z-index: 2;
   background: linear-gradient(rgba(40, 180, 240, 0.3), rgba(40, 180, 240, 0.3)), #fff;
   border: 2px solid #0580d5;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 #zen-supporting {
@@ -204,7 +206,7 @@ p {
   z-index: 2;
   background: linear-gradient(rgba(40, 180, 240, 0.3), rgba(40, 180, 240, 0.3)), #fff;
   border: 2px solid #0580d5;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 
 #zen-supporting > * {
@@ -217,6 +219,15 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  background-image: url(/images/rock-garden-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+  border-radius: 50px;
+  max-width: 1500px;
+  width: 90%;
+  align-self: center;
+  margin: auto;
 }
 
 body {
@@ -226,6 +237,10 @@ body {
   background-color: #EFEEED;
   margin: 0;
   padding: 1em;
+  background-image: url(/images/rock-pile-bg.jpg);
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
 }
 
 h1 {
