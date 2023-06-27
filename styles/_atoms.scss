@@ -3,16 +3,18 @@
 .intro header{
       color: transparent;
       overflow: hidden;
-      grid-column: 1/2;
+      grid-column: 1/3;
+      grid-row: 1/2;
       background-image: url(/images/stone-header.png);
       background-repeat: no-repeat;
       background-size:contain;
       background-position: center;
   }
 
-  .intro header:hover {
+  .intro header:hover { 
     margin-right:-350px;
-    margin-bottom:-100px;
+    margin-bottom:-50px;
+    margin-top: 20px;
     text-justify: auto;
     color: black;
     background-image: none;
@@ -20,8 +22,8 @@
 
 .intro .preamble{
     overflow: hidden;
-    grid-column: 3/4;
-    grid-row: 1/2;
+    grid-column: 2/4;
+      grid-row: 2/3;
     background-image: url(/images/stone-preamble.png);
     background-repeat: no-repeat;
     background-size:contain;
@@ -31,8 +33,10 @@
 
 
 .intro .preamble:hover {
-    margin-left:-350px; 
-    margin-bottom:-275px;
+    margin-left:-150px; 
+    margin-bottom:-100px;
+    margin-right: -200px;
+    margin-top: -100px;
     text-justify: auto;
     color: black;
     background-image: none;
@@ -41,8 +45,8 @@
 
 .intro .summary{
      overflow: hidden;
-      grid-column: 2/3;
-      grid-row: 2/3;
+     grid-column: 3/5;
+     grid-row: 1/2;
       background-image: url(/images/stone-summary.png);
       background-repeat: no-repeat;
       background-size:contain;
@@ -56,8 +60,9 @@
 
 
   .intro .summary:hover {
-    margin-right:calc(-100%);
-    margin-left:calc(-115.75% - 5px);
+    margin-right:-100px;
+    margin-left: -220px;
+    margin-top: 20px;
     text-align: center;
     text-justify: auto;
     color: black;
@@ -166,4 +171,36 @@
 p {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+// sidebar
+
+.sidebar .wrapper{
+  grid-row: 2/5;
+  grid-column: 2/5;
+  margin-top: 40px;
+  color: transparent;
+      overflow: hidden;
+      background-image: url(/images/stone-styles.png);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+}
+
+.sidebar>*:hover {
+  z-index:2;
+    background:
+      linear-gradient(rgba(40, 180, 240, .3),rgba(40, 180, 240, .3)),
+      #fff;
+      border: 2px solid #0580d5;
+      border-radius: 50px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+  overflow-y: scroll;
+  margin: -50px;
+}
+
+.sidebar>*:hover a{
+  color: blue;
 }

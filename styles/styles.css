@@ -2,7 +2,8 @@
 .intro header {
   color: transparent;
   overflow: hidden;
-  grid-column: 1/2;
+  grid-column: 1/3;
+  grid-row: 1/2;
   background-image: url(/images/stone-header.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -11,7 +12,8 @@
 
 .intro header:hover {
   margin-right: -350px;
-  margin-bottom: -100px;
+  margin-bottom: -50px;
+  margin-top: 20px;
   text-justify: auto;
   color: black;
   background-image: none;
@@ -19,8 +21,8 @@
 
 .intro .preamble {
   overflow: hidden;
-  grid-column: 3/4;
-  grid-row: 1/2;
+  grid-column: 2/4;
+  grid-row: 2/3;
   background-image: url(/images/stone-preamble.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,8 +31,10 @@
 }
 
 .intro .preamble:hover {
-  margin-left: -350px;
-  margin-bottom: -275px;
+  margin-left: -150px;
+  margin-bottom: -100px;
+  margin-right: -200px;
+  margin-top: -100px;
   text-justify: auto;
   color: black;
   background-image: none;
@@ -38,8 +42,8 @@
 
 .intro .summary {
   overflow: hidden;
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: 3/5;
+  grid-row: 1/2;
   background-image: url(/images/stone-summary.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -52,8 +56,9 @@
 }
 
 .intro .summary:hover {
-  margin-right: -100%;
-  margin-left: calc(-115.75% - 5px);
+  margin-right: -100px;
+  margin-left: -220px;
+  margin-top: 20px;
   text-align: center;
   text-justify: auto;
   color: black;
@@ -157,13 +162,41 @@ p {
   padding-right: 10px;
 }
 
+.sidebar .wrapper {
+  grid-row: 2/5;
+  grid-column: 2/5;
+  margin-top: 40px;
+  color: transparent;
+  overflow: hidden;
+  background-image: url(/images/stone-styles.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.sidebar > *:hover {
+  z-index: 2;
+  background: linear-gradient(rgba(40, 180, 240, 0.3), rgba(40, 180, 240, 0.3)), #fff;
+  border: 2px solid #0580d5;
+  border-radius: 50px;
+  text-justify: auto;
+  color: black;
+  background-image: none;
+  overflow-y: scroll;
+  margin: -50px;
+}
+
+.sidebar > *:hover a {
+  color: blue;
+}
+
 .intro {
   margin-left: 10px;
   width: 500px;
   height: 500px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
   text-overflow: hidden;
   word-wrap: break-word;
@@ -171,6 +204,34 @@ p {
   background-color: transparent;
   grid-column: 1/2;
   grid-row: 1/2;
+}
+
+.sidebar {
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  overflow: hidden;
+  word-wrap: break-word;
+  place-content: center;
+  background-color: transparent;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  background-color: transparent;
+  color: transparent;
+}
+
+.sidebar a {
+  color: transparent;
+}
+
+.sidebar > * {
+  box-sizing: border-box;
+  transition: 0.3s;
+  text-align: center;
 }
 
 .intro > * {
@@ -187,7 +248,7 @@ p {
 }
 
 #zen-supporting {
-  margin-left: 10px;
+  margin-right: 20px;
   width: 500px;
   height: 500px;
   display: grid;
@@ -198,7 +259,7 @@ p {
   word-wrap: break-word;
   place-content: center;
   background-color: transparent;
-  grid-column: 2/3;
+  grid-column: 4/5;
   grid-row: 2/3;
 }
 
@@ -217,7 +278,7 @@ p {
 
 .page-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 1fr;
   background-image: url(/images/rock-garden-bg.jpg);
   background-repeat: no-repeat;
