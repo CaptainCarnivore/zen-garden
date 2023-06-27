@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'atoms';
+
 .intro {
   margin-left: 10px;
   width: 500px;
@@ -89,4 +92,10 @@ color: transparent;
     transition: .3s;
     text-align: center;
     
+  }
+
+  // Part of sidebar
+  .wrapper div:not(:last-child) {
+    border-bottom: 2px solid $accent2;
+    padding-bottom: 20px;
   }

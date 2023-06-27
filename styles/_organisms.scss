@@ -1,3 +1,7 @@
+@use "variables" as *; //this puts all the variables in the global namespace.
+@use 'atoms';
+@use 'molecules';
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 2fr 2fr; 
@@ -15,5 +19,27 @@
 
 
   
-
-
+// Sidebar
+.sidebar {
+  background: $grey-sidebar;
+  color: $text-light;
+  width: 400px;
+  padding: 10px;
+  h3 {
+    font-family:$fonts-headline;
+    margin: 15px;
+  }
+  li {
+    margin-top: 10px;
+  }
+  a {
+    color: $text-light;
+    text-decoration: none;
+    border-bottom: 1px solid $text-light;
+    transition: font-size 0.2s ease-in-out;
+  }
+  a:hover {
+    border-color: $accent2;
+    font-size: 1.15em;
+  }
+}
