@@ -191,18 +191,32 @@ p {
 
 .sidebar>*:hover {
   z-index:2;
-    background:
-      linear-gradient(rgba(40, 180, 240, .3),rgba(40, 180, 240, .3)),
-      #fff;
+  background: $grey-sidebar;
       border: 2px solid #0580d5;
       border-radius: 50px;
   text-justify: auto;
-  color: black;
+  color: $text-light;
   background-image: none;
   overflow-y: scroll;
   margin: -50px;
+  li {
+    margin-top: 10px;
+  }
+  h3 {
+    font-family:$fonts-headline;
+    margin: 15px;
+  }
 }
 
 .sidebar>*:hover a{
-  color: blue;
+  color: $text-light;
+    text-decoration: none;
+    border-bottom: 1px solid $text-light;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.sidebar>*:hover a:hover{
+  color: $accent2;
+  border-color: $accent2;
+  font-size: 1.15em;
 }
