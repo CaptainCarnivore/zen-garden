@@ -1,5 +1,10 @@
 @use 'variables' as *;
 
+@mixin card-colors($back: $grey-card, $text: $text-light) {
+  background-color: $back;
+  color: $text;
+}
+
 // intro
 
 .intro header{
@@ -20,6 +25,7 @@
     text-justify: auto;
     color: black;
     background-image: none;
+    @include card-colors();
   }
 
 .intro .preamble{
@@ -42,6 +48,7 @@
     text-justify: auto;
     color: black;
     background-image: none;
+    @include card-colors();
   }
   
 
@@ -69,12 +76,16 @@
     text-justify: auto;
     color: black;
     background-image: none;
+    @include card-colors();
   }
 
-  .intro .summary:hover a{
-
-    color: black;
-
+  .intro .summary:hover a {
+    color: $text-light;
+  }
+  
+  .intro .summary:hover a:hover {
+    color: $accent2;
+    font-size: 1.15em;
   }
 
 // zen supporting
@@ -139,6 +150,7 @@
     background-image: none;
     overflow-y: scroll;
     overflow-x: hidden;
+    @include card-colors();
   }
       
 #zen-supporting .participation:hover {
@@ -147,10 +159,17 @@
   text-justify: auto;
   color: black;
   background-image: none;
+  @include card-colors();
 }
       
 #zen-supporting>*:hover a {
-  color: blue;
+  color: $text-light;
+  transition: font-size 0.2s ease-in-out;
+}
+
+#zen-supporting>*:hover a:hover {
+  color: $accent2;
+  font-size: 1.15em;
 }
       
 #zen-supporting .benefits:hover {
@@ -159,6 +178,7 @@
   text-justify: auto;
   color: black;
   background-image: none;
+  @include card-colors();
 }  
 #zen-supporting .requirements:hover {
   margin-left:-250px;
@@ -168,6 +188,7 @@
   overflow-x: hidden;
   color: black;
   background-image: none;
+  @include card-colors();
 }
 
 p {
@@ -191,7 +212,7 @@ p {
 
 .sidebar>*:hover {
   z-index:2;
-  background: $grey-sidebar;
+  background: $grey-card;
       border: 2px solid #0580d5;
       border-radius: 50px;
   text-justify: auto;
