@@ -6,7 +6,7 @@ body {
   background-color: #EFEEED;
   margin: 0;
   padding: 1em;
-  background-image: url(/images/rock-pile-bg.jpg);
+  background-image: url(../images/rock-pile-bg.jpg);
   background-repeat: repeat;
   background-size: auto;
   background-position: center;
@@ -27,7 +27,7 @@ h3 {
   overflow: hidden;
   grid-column: 1/3;
   grid-row: 1/2;
-  background-image: url(/images/stone-header.png);
+  background-image: url(../images/stone-header.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -40,13 +40,15 @@ h3 {
   text-justify: auto;
   color: black;
   background-image: none;
+  background-color: rgba(51, 55, 69, 0.9);
+  color: #DDDED8;
 }
 
 .intro .preamble {
   overflow: hidden;
   grid-column: 2/4;
   grid-row: 2/3;
-  background-image: url(/images/stone-preamble.png);
+  background-image: url(../images/stone-preamble.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -61,13 +63,15 @@ h3 {
   text-justify: auto;
   color: black;
   background-image: none;
+  background-color: rgba(51, 55, 69, 0.9);
+  color: #DDDED8;
 }
 
 .intro .summary {
   overflow: hidden;
   grid-column: 3/5;
   grid-row: 1/2;
-  background-image: url(/images/stone-summary.png);
+  background-image: url(../images/stone-summary.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -86,10 +90,17 @@ h3 {
   text-justify: auto;
   color: black;
   background-image: none;
+  background-color: rgba(51, 55, 69, 0.9);
+  color: #DDDED8;
 }
 
 .intro .summary:hover a {
-  color: black;
+  color: #DDDED8;
+}
+
+.intro .summary:hover a:hover {
+  color: #74A84F;
+  font-size: 1.15em;
 }
 
 #zen-supporting .explanation {
@@ -97,7 +108,7 @@ h3 {
   overflow: hidden;
   grid-column: 1/2;
   grid-row: 1/2;
-  background-image: url(/images/stone-explanation.png);
+  background-image: url(../images/stone-explanation.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -108,7 +119,7 @@ h3 {
   overflow: hidden;
   grid-column: 2/3;
   grid-row: 1/2;
-  background-image: url(/images/stone-participation.png);
+  background-image: url(../images/stone-participation.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -119,7 +130,7 @@ h3 {
   overflow: hidden;
   grid-column: 1/2;
   grid-row: 2/3;
-  background-image: url(/images/stone-benefits.png);
+  background-image: url(../images/stone-benefits.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -130,7 +141,7 @@ h3 {
   overflow: hidden;
   grid-column: 2/3;
   grid-row: 2/3;
-  background-image: url(/images/stone-requirements.png);
+  background-image: url(../images/stone-requirements.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -148,6 +159,8 @@ h3 {
   background-image: none;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: rgba(51, 55, 69, 0.9);
+  color: #DDDED8;
 }
 
 #zen-supporting .participation:hover {
@@ -156,10 +169,18 @@ h3 {
   text-justify: auto;
   color: black;
   background-image: none;
+  background-color: rgba(51, 55, 69, 0.9);
+  color: #DDDED8;
 }
 
 #zen-supporting > *:hover a {
-  color: blue;
+  color: #DDDED8;
+  transition: font-size 0.2s ease-in-out;
+}
+
+#zen-supporting > *:hover a:hover {
+  color: #74A84F;
+  font-size: 1.15em;
 }
 
 #zen-supporting .benefits:hover {
@@ -168,6 +189,8 @@ h3 {
   text-justify: auto;
   color: black;
   background-image: none;
+  background-color: rgba(51, 55, 69, 0.9);
+  color: #DDDED8;
 }
 
 #zen-supporting .requirements:hover {
@@ -178,6 +201,8 @@ h3 {
   overflow-x: hidden;
   color: black;
   background-image: none;
+  background-color: rgba(51, 55, 69, 0.9);
+  color: #DDDED8;
 }
 
 p {
@@ -191,7 +216,7 @@ p {
   margin-top: 40px;
   color: transparent;
   overflow: hidden;
-  background-image: url(/images/stone-styles.png);
+  background-image: url(../images/stone-styles.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -324,7 +349,7 @@ p {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 1fr;
-  background-image: url(/images/rock-garden-bg.jpg);
+  background-image: url(../images/rock-garden-bg.jpg);
   background-repeat: no-repeat;
   background-size: 1500px;
   background-position: center;
@@ -335,6 +360,7 @@ p {
   margin: auto;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 60em) {
   body {
     background-image: url(/images/rock-garden-bg.jpg);
@@ -542,4 +568,6 @@ p {
 
   }
 
+=======
+>>>>>>> e2c1b010d4fc577eb9ad2d94a8feff5c610e7581
 /*# sourceMappingURL=styles.css.map */
