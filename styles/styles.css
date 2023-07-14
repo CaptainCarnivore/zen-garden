@@ -360,7 +360,7 @@ p {
   margin: auto;
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 65em) {
   body {
     background-image: url(/images/rock-garden-bg.jpg);
     background-repeat: repeat;
@@ -392,7 +392,6 @@ p {
     margin-right: 100%;
     grid-row: 1/2;
     grid-column: 1/2;
-    background-color: ;
   }
 
 
@@ -448,7 +447,6 @@ p {
     margin-right: -100%;
     margin-bottom: -75%;
     text-justify: auto;
-    color: black;
     background-image: none;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -458,21 +456,19 @@ p {
     margin-left: -100%;
     margin-bottom: -75%;
     text-justify: auto;
-    color: black;
     background-image: none;
     overflow-y: scroll;
     overflow-x: hidden;
   }
   
   #zen-supporting > *:hover a {
-    color: blue;
+
   }
   
   #zen-supporting .benefits:hover {
     margin-right: -100%;
     margin-top: -25%;
     text-justify: auto;
-    color: black;
     background-image: none;
   }
   
@@ -482,7 +478,6 @@ p {
     text-justify: auto;
     overflow-y: scroll;
     overflow-x: hidden;
-    color: black;
     background-image: none;
   }
   
@@ -491,80 +486,30 @@ p {
 
 
 
+/*# sourceMappingURL=styles.css.map */
+
+
+
 
 /* Mobile View */
+@media only screen and (max-width: 40em) {
 
-@media only screen and (max-width: 37.5em) {
-
-
-
-
-  .page-wrapper {
-
-    grid-template-columns: 1fr 1fr 1fr;
-
-  }   
-
-  .intro header { /* Title */
-
-    grid-area: 1 / 2 / span 1 / span 1;
-
-  }
-
-  .intro .preamble {
-
-    grid-area: 2 / 2 / span 1 / span 1;
-
-  }
-
-  .intro .summary {
-
-    grid-area: 3 / 2 / span 1 / span 1;
-
-  }
-
-  .sidebar {
-
-    grid-area: 8 / 1 / auto / span 1;
-
-    align-self: right;
-
+  .intro {
+    margin-left: 0px;
   }
 
   #zen-supporting {
-
-    grid-template-columns: 1fr 1fr 1fr;
-
-    grid-column: 1;
-
-    margin-top: -70px;
-
-    }
-
-    #zen-supporting .explanation {
-
-      grid-area: 4 / 2 / span 1 / span 1;
-
-    }
-
-    #zen-supporting .participation {
-
-      grid-area: 5 / 2 / span 1 / span 1;
-
-    }
-
-    #zen-supporting .benefits {
-
-      grid-area: 6 / 2 / span 1 / span 1;
-
-    }
-
-    #zen-supporting .requirements {
-
-      grid-area: 7 / 2 / span 1 / span 1;
-
-    }      
-
+    margin-left: 0px;
+    margin-top: -100px;
   }
 
-/*# sourceMappingURL=styles.css.map */
+  .sidebar {
+    margin-top: 60%;
+    margin-left: -23%;
+  }
+
+
+
+  
+  
+}
