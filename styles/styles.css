@@ -362,7 +362,7 @@ p {
 
 @media only screen and (max-width: 65em) {
   body {
-    background-image: url(/images/rock-garden-bg.jpg);
+    background-image: url(../images/rock-garden-bg.jpg);
     background-repeat: repeat;
     background-size:auto;
     background-position: center;
